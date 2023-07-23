@@ -14,7 +14,7 @@ const inputTextAreaEl = document.getElementById("input-textarea");
 const saveNoteBtnEl = document.getElementById("save-note-btn");
 
 saveNoteBtnEl.addEventListener("click", function() {
-    
+    console.log("button clicked");
     let newNote = {note: inputTextEl.value, description: inputTextAreaEl.value};
     
     push(personalNotesInDB, newNote);
