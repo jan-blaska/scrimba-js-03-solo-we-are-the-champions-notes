@@ -1,4 +1,76 @@
-html, body {
+* {
     margin: 0;
     padding: 0;
+}
+
+@font-face {
+    font-family: "dancingScript";
+    src: url(assets/dancing-script-font/DancingScript-VariableFont_wght.ttf);
+}
+
+body {
+    background-color: #e5c1ab;
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.container, .adding-new-note, .not-adding-new-note {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    margin: 30px auto;
+}
+
+img {
+    width: 200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: dancingScript;
+    font-size: 55px;
+    margin: 10px auto;
+    color: #873e23;
+}
+
+input, textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #873e23;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: #886850;
+}
+
+h2 {
+    margin: 20px auto;
+    color: #886850;
+}
+
+.note {
+    margin-bottom: 10px;
+}
+
+.note h3 {
+    color: #886850;
+}
+
+.note p {
+    font-size: 16px;
 }

@@ -8,3 +8,7 @@ const appSettings = {
 const app = initializeApp(appSettings)
 const database = getDatabase(app)
 const personalNotesInDB = ref(database, "personalNotes");
+
+
+let isAddingNewNote = false;
+
