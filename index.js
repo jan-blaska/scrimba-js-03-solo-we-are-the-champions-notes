@@ -25,7 +25,10 @@ saveNoteBtnEl.addEventListener("click", function() {
 })
 
 onValue(personalNotesInDB, function(snapshot) {
-    if (snapshot.exists()) {
+    console.log(snapshot);
+    
+    
+    /*if (snapshot.exists()) {
         let notesArray = Object.entries(snapshot.val());
 
         clearNotesContainerEl();
@@ -40,7 +43,7 @@ onValue(personalNotesInDB, function(snapshot) {
 
     } else {
         notesContainerEl.innerHTML = "No notes here... yet";
-    }
+    }*/
 })
 
 function clearInputElements() {
