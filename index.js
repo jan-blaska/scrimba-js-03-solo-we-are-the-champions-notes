@@ -29,7 +29,7 @@ onValue(personalNotesInDB, function(snapshot) {
     if (snapshot.exists()) {
         let notesArray = Object.entries(snapshot.val());
 
-        clearNotesContainerEl();
+        /*clearNotesContainerEl();*/
 
         for (let i = 0; i < notesArray.length; i++) {
             let currentNote = notesArray[i];
@@ -49,9 +49,9 @@ function clearInputElements() {
     inputTextAreaEl.value = "";
 }
 
-function clearNotesContainerEl() {
+/*function clearNotesContainerEl() {
     notesContainerEl.innerHTML = "";
-}
+}*/
 
 function appendNoteToNotesContainerEl(noteID, noteValue) {
     
