@@ -64,14 +64,14 @@ function appendNoteToNotesContainerEl(noteID, noteValue) {
     console.log(noteID);*/
     
     
-    let newNoteDivEl = document.createElement("div");
+    /*let newNoteDivEl = document.createElement("div");
     newNoteDivEl.classList.add("note");
 
     let newNoteEl = document.createElement("h3");
     let newDescriptionEl = document.createElement("p");
     
-    /*newNoteEl.textContent = noteValue.note;
-    newDescriptionEl.textContent = noteValue.description;*/
+    newNoteEl.textContent = noteValue.note;
+    newDescriptionEl.textContent = noteValue.description;
 
     
     newNoteEl.textContent = "blablabla";
@@ -80,6 +80,10 @@ function appendNoteToNotesContainerEl(noteID, noteValue) {
     newNoteDivEl.appendChild(newNoteEl);
     newNoteDivEl.appendChild(newDescriptionEl);
 
-    notesContainerEl.appendChild(newNoteDivEl);
+    notesContainerEl.appendChild(newNoteDivEl);*/
+
+    let abcd = document.createElement("p");
+    abcd.textContent = "hovno";
+    notesContainerEl.append(abcd);
 }
 
