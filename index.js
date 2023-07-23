@@ -25,7 +25,8 @@ saveNoteBtnEl.addEventListener("click", function() {
 })
 
 onValue(personalNotesInDB, function(snapshot) {
-    console.log(snapshot);
+    let notesArray = Object.entries(snapshot.val());
+    console.log(notesArray);
     
     
     /*if (snapshot.exists()) {
