@@ -64,7 +64,7 @@ function appendNoteToNotesContainerEl(noteID, noteValue) {
     console.log(noteID);
     
     
-    let newNoteDivEl = document.createElement("div");
+    /*let newNoteDivEl = document.createElement("div");
 
     let newNoteEl = document.createElement("h3");
     let newDescriptionEl = document.createElement("p");
@@ -77,6 +77,6 @@ function appendNoteToNotesContainerEl(noteID, noteValue) {
 
     newNoteDivEl.classList.add("note");
 
-    notesContainerEl.append(newNoteDivEl);
+    notesContainerEl.append(newNoteDivEl);*/
 }
 
