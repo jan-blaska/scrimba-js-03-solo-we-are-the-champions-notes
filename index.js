@@ -35,9 +35,11 @@ onValue(personalNotesInDB, function(snapshot) {
             let currentNote = notesArray[i];
             let currentNoteID = currentNote[0];
             let currentNoteValue = currentNote[1];
+
+            appendNoteToNotesContainerEl(currentNoteID, currentNoteValue);
         }
 
-        appendNoteToNotesContainerEl(currentNoteID, currentNoteValue);
+        
 
     } else {
         notesContainerEl.innerHTML = "No notes here... yet";
