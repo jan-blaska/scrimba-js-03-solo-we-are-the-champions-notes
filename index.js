@@ -64,14 +64,16 @@ function appendNoteToNotesContainerEl(noteID, noteValue) {
     console.log(noteID);*/
     
     
-    /*let newNoteDivEl = document.createElement("div");
+    let newNoteDivEl = document.createElement("div");
     newNoteDivEl.classList.add("note");
 
     let newNoteEl = document.createElement("h3");
     let newDescriptionEl = document.createElement("p");
     
-    newNoteEl.textContent = noteValue.note;
+    /*newNoteEl.textContent = noteValue.note;
     newDescriptionEl.textContent = noteValue.description;*/
+
+    
     newNoteEl.textContent = "blablabla";
     newDescriptionEl.textContent = "blablablablabla";
 
