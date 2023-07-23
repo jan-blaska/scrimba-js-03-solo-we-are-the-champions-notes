@@ -29,7 +29,7 @@ onValue(personalNotesInDB, function(snapshot) {
     if (snapshot.exists()) {
         let notesArray = Object.entries(snapshot.val());
 
-        /*clearNotesContainerEl();*/
+        clearNotesContainerEl();
 
         for (let i = 0; i < notesArray.length; i++) {
             let currentNote = notesArray[i];
@@ -38,8 +38,6 @@ onValue(personalNotesInDB, function(snapshot) {
 
             appendNoteToNotesContainerEl(currentNoteID, currentNoteValue);
         }
-
-        
 
     } else {
         notesContainerEl.innerHTML = "No notes here... yet";
@@ -51,9 +49,9 @@ function clearInputElements() {
     inputTextAreaEl.value = "";
 }
 
-/*function clearNotesContainerEl() {
+function clearNotesContainerEl() {
     notesContainerEl.innerHTML = "";
-}*/
+}
 
 function appendNoteToNotesContainerEl(noteID, noteValue) {
     
@@ -68,6 +66,12 @@ function appendNoteToNotesContainerEl(noteID, noteValue) {
 
     newNoteDivEl.appendChild(newNoteEl);
     newNoteDivEl.appendChild(newDescriptionEl);
+
+    newNoteDivEl.addEventListener("click", function() {
+        let exactLocationOfNoteInDB = ref(database, `personalNotes/${noteID}`)
+        
+        remove(exactLocationOfNoteInDB)
+    })
 
     notesContainerEl.appendChild(newNoteDivEl);
 }
