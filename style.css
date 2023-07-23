@@ -12,6 +12,7 @@ body {
     background-color: #e5c1ab;
     color: white;
     font-family:'Courier New', Courier, monospace;
+    user-select: none;
 }
 
 .container, .adding-new-note, .not-adding-new-note {
