@@ -83,7 +83,7 @@ function appendNoteToNotesContainerEl(noteID, noteValue) {
     notesContainerEl.appendChild(newNoteDivEl);*/
 
     let abcd = document.createElement("p");
-    abcd.textContent = "hovno";
+    abcd.innerHTML = "hovno";
     notesContainerEl.append(abcd);
 }
 
