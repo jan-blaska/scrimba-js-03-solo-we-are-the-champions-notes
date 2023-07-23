@@ -58,13 +58,13 @@ function clearInputElements() {
 function appendNoteToNotesContainerEl(noteID, noteValue) {
     
     console.log("poznámka");
-    console.log(noteValue.name);
+    console.log(noteValue.note);
     console.log(noteValue.description);
     console.log("ID");
     console.log(noteID);
     
     
-    /*let newNoteDivEl = document.createElement("div");
+    let newNoteDivEl = document.createElement("div");
 
     let newNoteEl = document.createElement("h3");
     let newDescriptionEl = document.createElement("p");
@@ -77,6 +77,6 @@ function appendNoteToNotesContainerEl(noteID, noteValue) {
 
     newNoteDivEl.classList.add("note");
 
-    notesContainerEl.append(newNoteDivEl);*/
+    notesContainerEl.append(newNoteDivEl);
 }
 
