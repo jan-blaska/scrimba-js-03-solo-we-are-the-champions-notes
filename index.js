@@ -76,6 +76,6 @@ function appendNoteToNotesContainerEl(noteID, noteValue) {
     newNoteDivEl.appendChild(newNoteEl);
     newNoteDivEl.appendChild(newDescriptionEl);
 
-    notesContainerEl.append(newNoteDivEl);
+    notesContainerEl.appendChild(newNoteDivEl);
 }
 
